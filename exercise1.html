@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auckland Open</title>
+  </head>
+  <body>
+    <h1>Auckland Open Registration Form</h1>
+
+    <form action="register">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" />
+
+      <div>
+        <p>Select match to play:</p>
+        <input type="checkbox" id="single" name="signle" />
+        <label for="single">Single</label>
+        <input type="checkbox" id="double" name="double" />
+        <label for="double">Double</label>
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+
+      <br />
+      <div>
+        <label for="">Select age group:</label>
+        <select name="age" id="age">
+          <option value="u11">u11</option>
+          <option value="u13">u13</option>
+          <option value="u15">u15</option>
+          <option value="u18">u18</option>
+        </select>
+      </div>
+      <br />
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

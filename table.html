@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables examples</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table examples</h1>
+
+    <h2>Basic usage with tr, th, td</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Rank</th>
+        <th>Gender</th>
+        <th>Team</th>
+      </tr>
+      <tr>
+        <td>Walle</td>
+        <td>1</td>
+        <td>Male</td>
+        <td>Dragfly</td>
+      </tr>
+      <tr>
+        <td>Angel</td>
+        <td>100</td>
+        <td>Female</td>
+        <td>Dragfly</td>
+      </tr>
+      <tr>
+        <td>Mikey</td>
+        <td>2</td>
+        <td>Male</td>
+        <td>Dragfly</td>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>10</td>
+        <td>Male</td>
+        <td>Auckland</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Table with thead, tbody, tfoot</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>Gender</th>
+          <th>Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Walle</td>
+          <td>1</td>
+          <td>Male</td>
+          <td>Dragfly</td>
+        </tr>
+        <tr>
+          <td>Angel</td>
+          <td>100</td>
+          <td>Female</td>
+          <td>Dragfly</td>
+        </tr>
+        <tr>
+          <td>Mikey</td>
+          <td>2</td>
+          <td>Male</td>
+          <td>Dragfly</td>
+        </tr>
+        <tr>
+          <td>Alex</td>
+          <td>10</td>
+          <td>Male</td>
+          <td>Auckland</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>4</th>
+          <th>Points</th>
+          <th>1000</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <h2>Table with colspan, rowspan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Points</th>
+        </tr>
+        <tr>
+          <th>2020</th>
+          <th>2021</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Walle</td>
+          <td>500</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Angel</td>
+          <td>-100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Mikey</td>
+          <td>2000</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Alex</td>
+          <td>10</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
